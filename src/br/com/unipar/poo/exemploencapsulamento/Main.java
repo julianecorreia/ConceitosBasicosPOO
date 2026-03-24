@@ -38,5 +38,16 @@ public class Main {
         System.out.println("Com quem João casou? Com a " +
                 cliente.getConjuge().getNome());
 
+        Carro carro = new Carro("Chevrolet", "Onix", MotorEnum.MOTOR_1_4);
+
+        cliente.setCarro(carro);
+
+        System.out.println(cliente.getNome() +
+                " comprou um " + cliente.getCarro().getModelo());
+
+        System.out.println("O " + cliente.getCarro().getModelo() +
+                " do " + cliente.getNome() + " tem um motor " +
+                cliente.getCarro().getMotor().getDescricao());
+
     }
 }

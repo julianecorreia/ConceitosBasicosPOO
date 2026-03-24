@@ -13,7 +13,9 @@ public class Cliente {
 
     private List<Endereco> enderecos = new ArrayList<>();
 
-    private Cliente conjuge;
+    private Cliente conjuge; // ele é casado
+    private Carro carro; //possui um carro
+
 
     //TODO lista de telefone
     //TODO carro
@@ -74,6 +76,14 @@ public class Cliente {
 
     public void setConjuge(Cliente conjuge) {
         this.conjuge = conjuge;
+    }
+
+    public Carro getCarro() {
+        return carro;
+    }
+
+    public void setCarro(Carro carro) {
+        this.carro = carro;
     }
 
     @Override
