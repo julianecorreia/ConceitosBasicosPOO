@@ -3,16 +3,13 @@ package br.com.unipar.poo.exemploheranca;
 public class Main {
 
     public static void main(String[] args) {
-        Gato gato = new Gato("Miumiu");
+        Animal animal1 = new Gato("Miumiu");
+        System.out.println("Gato criado: " + animal1.getNome());
 
-        System.out.println("Gato criado: " + gato.getNome());
+        Animal animal2 = new Cachorro("Tiranossauro");
+        System.out.println("Cachorro criado: " + animal2.getNome());
 
-        gato.emitirSom();
-
-        Cachorro cachorro = new Cachorro("Tiranossauro");
-
-        System.out.println("Cachorro criado: " + cachorro.getNome());
-
-        cachorro.emitirSom();
+        animal1.emitirSom(); //polimorfismo
+        animal2.emitirSom();
     }
 }
