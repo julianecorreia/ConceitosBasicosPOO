@@ -8,5 +8,6 @@ public interface Pagamento {
 
     void pagar(double valor);
     String descreverPagamento();
+    //void parcelar(int quantidade);
 
 }
